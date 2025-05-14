@@ -2,12 +2,9 @@
 
 import FeatureCard from "@/components/FeatureCard";
 import Tag from "@/components/Tag";
-import avatar1 from "@/assets/images/avatar-ashwin-santiago.jpg";
-import avatar2 from "@/assets/images/avatar-florence-shaw.jpg";
-import avatar3 from "@/assets/images/avatar-lula-meyers.jpg";
 import Image from "next/image";
-import Avatar from "@/components/Avatar";
-import { Ellipsis } from "lucide-react";
+
+import frontend from "@/assets/images/exp4.svg";
 import Key from "@/components/Key";
 import { motion } from "framer-motion";
 
@@ -69,33 +66,12 @@ export default function Features() {
                                 className="md:col-span-2 lg:col-span-1"
                             >
                                 <div className="aspect-video flex items-center justify-center">
-                                    <Avatar className="z-40">
-                                        <Image
-                                            src={avatar1}
-                                            alt="Avatar 1"
-                                            className="rounded-full"
-                                        />
-                                    </Avatar>
-                                    <Avatar className="-ml-6 border-indigo-500 z-30">
-                                        <Image
-                                            src={avatar2}
-                                            alt="Avatar 2"
-                                            className="rounded-full"
-                                        />
-                                    </Avatar>
-                                    <Avatar className="-ml-6 border-amber-500 z-20">
-                                        <Image
-                                            src={avatar3}
-                                            alt="Avatar 3"
-                                            className="rounded-full"
-                                        />
-                                    </Avatar>
-                                    <Avatar className="-ml-6 border-transparent z-10">
-                                        <div className="rounded-full flex justify-center items-center size-full bg-neutral-700">
-                                            <Ellipsis size={30} />
-                                        </div>
-                                    </Avatar>
-                                </div>
+                                    <Image
+                                        src={frontend}
+                                        alt="avatar"
+                                        className=" w-49 h-20 object-cover"
+                                    />
+                                </div> 
                             </FeatureCard>
                         </motion.div>
 
@@ -114,11 +90,11 @@ export default function Features() {
                             >
                                 <div className="aspect-video flex items-center justify-center">
                                     <p className="group-hover:text-white/40 transition duration-500 text-4xl font-extrabold text-white/20 text-center">
-                                        We've achived{" "}
+                                        Development {" "}
                                         <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                                            incrideible
+                                            & Design
                                         </span>{" "}
-                                        growth this year
+                                         
                                     </p>
                                 </div>
                             </FeatureCard>

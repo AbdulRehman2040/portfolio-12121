@@ -19,10 +19,7 @@ export default function Hero() {
     const [rightPointerScope, rightPointerAnimate] = useAnimate();
 
     useEffect(() => {
-        leftDesignAnimate([
-            [leftDesignScope.current, { opacity: 1 }, { duration: 0.5 }],
-            [leftDesignScope.current, { y: 0, x: 0 }, { duration: 0.5 }],
-        ]);
+        
 
         leftPointerAnimate([
             [leftPointerScope.current, { opacity: 1 }, { duration: 0.5 }],
@@ -34,15 +31,7 @@ export default function Hero() {
             ],
         ]);
 
-        rightDesignAnimate([
-            [
-                rightDesignScope.current,
-                { opacity: 1 },
-                { duration: 0.5, delay: 1.5 },
-            ],
-            [rightDesignScope.current, { y: 0, x: 0 }, { duration: 0.5 }],
-        ]);
-
+       
         rightPointerAnimate([
             [
                 rightPointerScope.current,
@@ -66,44 +55,22 @@ export default function Hero() {
             }}
         >
             <div className="container relative ">
-                <motion.div
-                    ref={leftDesignScope}
-                    initial={{ opacity: 0, y: 100, x: -100 }}
-                    className="absolute -left-32 top-16 hidden lg:block"
-                    drag
-                >
-                    <Image
-                        draggable={false}
-                        src={designExample1}
-                        alt="design example 1"
-                    />
-                </motion.div>
+                
                 <motion.div
                     ref={leftPointerScope}
                     initial={{ opacity: 0, y: 100, x: -200 }}
                     className="absolute top-96 left-56 hidden lg:block"
                 >
-                    <Pointer name="Andrea" />
+                    <Pointer name="client 1" />
                 </motion.div>
 
-                <motion.div
-                    initial={{ opacity: 0, y: 100, x: 100 }}
-                    ref={rightDesignScope}
-                    className="absolute -right-64 -top-16 hidden lg:block"
-                    drag
-                >
-                    <Image
-                        draggable={false}
-                        src={designExample2}
-                        alt="design example 2"
-                    />
-                </motion.div>
+              
                 <motion.div
                     ref={rightPointerScope}
                     initial={{ opacity: 0, x: 275, y: 100 }}
                     className="absolute -top-4 right-80 hidden lg:block"
                 >
-                    <Pointer color="red" name="Brew" />
+                    <Pointer color="red" name="Client 2" />
                 </motion.div>
 
                 <div className="flex justify-center">
@@ -113,16 +80,18 @@ export default function Hero() {
 
                 </div>
                 <h1 className="text-6xl md:text-7xl lg:text-8xl font-medium text-center mt-6 ">
-                Crafting Modern Web Experiences, Effortlessly
+               Building Bold Web Experiences for Modern Brands
+
                 </h1>
                 <p className="text-center text-xl text-white/50 mt-8 max-w-2xl mx-auto">
-                Building fast, responsive, and aesthetic websites using the latest tech—Next.js, Tailwind CSS, and TypeScript..
+              I help startups and solo founders turn their ideas into fast, responsive, and scalable web apps — using Next.js, TypeScript, and Tailwind CSS.
+
                 </p>
                 <form className="mx-auto flex border border-white/50 rounded-full p-2 mt-8 max-w-lg">
                     <input
                         type="email"
-                        placeholder="Enter your email"
-                        className="bg-transparent px-4 flex-1 w-full"
+                        placeholder="Let’s Work Together"
+                        className="bg-transparent px-4 flex-1 w-full rounded-full"
                     />
                     <Button
                         size="sm"

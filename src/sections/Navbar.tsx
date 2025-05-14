@@ -1,6 +1,6 @@
 "use client";
 
-import logoImage from "@/assets/images/logo.svg";
+import logoImage from "@/assets/images/logo.png";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Button from "@/components/button";
@@ -27,7 +27,7 @@ export default function Navbar() {
                                 <Image
                                     src={logoImage}
                                     alt="layer logo"
-                                    className="h-9 w-auto md:h-auto"
+                                    className="w-20 lg:w-20"
                                 />
                             </div>
                             <div className="hidden lg:flex justify-center items-center ">
