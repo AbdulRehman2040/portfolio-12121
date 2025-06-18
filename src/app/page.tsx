@@ -6,6 +6,7 @@ import Integrations from "@/sections/Integrations"
 import Introduction from "@/sections/Introduction"
 import LogoTicker from "@/sections/LogoTicker"
 import Navbar from "@/sections/Navbar"
+// import Recentproject from "@/sections/Recentproject"
 
 export default function Home() {
     return  <>
@@ -15,6 +16,7 @@ export default function Home() {
     <Introduction/>
     <Features/>
     <Integrations />
+    {/* <Recentproject/> */}
     <CallToAction />
     <Footer/>
 
