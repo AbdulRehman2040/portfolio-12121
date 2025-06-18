@@ -25,6 +25,7 @@ export default function RootLayout({
             <body
                 className={`${inter.variable} font-sans antialiased bg-neutral-950 text-white `}
             >
+                <Messenger/>
                 {children}
                
             </body>

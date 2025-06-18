@@ -5,22 +5,20 @@ import Hero from "@/sections/Hero"
 import Integrations from "@/sections/Integrations"
 import Introduction from "@/sections/Introduction"
 import LogoTicker from "@/sections/LogoTicker"
-import Messenger from "@/sections/messenger"
 import Navbar from "@/sections/Navbar"
-// import Recentproject from "@/sections/Recentproject"
+import Recentproject from "@/sections/Recentproject"
 
 export default function Home() {
     return  <>
-    {/* <Navbar />
+    <Navbar />
     <Hero />
     <LogoTicker/>
     <Introduction/>
-    <Features/> */}
-    {/* <Integrations /> */}
-    {/* <Recentproject/> */}
-    {/* <CallToAction />
-    <Footer/> */}
-  bhelloo
-  <Messenger/>
+    <Features/>
+    <Integrations />
+    <Recentproject/>
+    <CallToAction />
+    <Footer/>
+
     </>
 }
